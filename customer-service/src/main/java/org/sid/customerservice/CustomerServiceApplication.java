@@ -20,9 +20,11 @@ public class CustomerServiceApplication {
 	CommandLineRunner start(CustomerRepository customerRepository) {
 		return args -> {
 			customerRepository.saveAll(List.of(
-					Customer.builder().name("Mohamed").email("med@gmail.com").build(),
-					Customer.builder().name("Hassan").email("hasan@gmail.com").build(),
-					Customer.builder().name("IMane").email("imane@gmail.com").build()
+					Customer.builder().name("charafeddine").email("charafeddine@gmail.com").build(),
+					Customer.builder().name("salwa").email("salwa@gmail.com").build(),
+					Customer.builder().name("Ahmed").email("Ahmed@gmail.com").build(),
+					Customer.builder().name("Khadija").email("Khadija@gmail.com").build(),
+					Customer.builder().name("Saad").email("Saad@gmail.com").build()
 			));
 			customerRepository.findAll().forEach(System.out::println);
 		};
